@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Gate</title>
+</head>
+<body>
+    <nav id="menu" class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--hidden">
+                <span style="color: #d7d7d7"
+                    ><a href="javascript:void(0);" onclick="nav()"><i class="fa-solid fa-bars fa-lg"></i></a
+                ></span>
+            </li>
+            <li class="menu__item menu__logo" id="Logo"><img src="/img/techblu.png" alt="logo" style="width: 160px" /></li>
+            <li class="menu__item"><a href="/public/index.html">home</a></li>
+            <li class="menu__item"><a href="/public/about.html">a empresa</a></li>
+            <li class="menu__item"><a href="/public/projects.html">projetos</a></li>
+            <li class="menu__item"><a href="/public/contact.html">contato</a></li>
+        </ul>
+    <section class="contact" id="contact">
+        <h2 class="contact__title headerSection">contato</h2>
+        <form action="" method="" class="contact__form">
+            <label for="name">Nome: </label>
+            <br />
+            <input class="contact__form-input input-sm" type="text" name="name" id="name" placeholder="Name" />
+            <br />
+            <label for="email">Email: </label>
+            <br />
+            <input class="contact__form-input input-sm" type="email" name="email" id="email" value="exemplo@gmail.com" />
+            <br />
+            <label for="text">Mensagem: </label>
+            <br />
+            <textarea class="contact__form-input" name="text" id="text" cols="30" rows="5"></textarea>
+            <br />
+            <button class="contact__form-button" type="submit">Submit</button>
+        </form>
+        <br />
+        <div class="contact__list">
+            <a class="contact__media" href="https://pt-br.facebook.com/techblu/"><i class="fa-brands fa-facebook-square fa-4x"></i></a>
+            <a class="contact__media" href="https://www.youtube.com/user/mvmagalhaes"><i class="fa-brands fa-youtube fa-4x"></i></a>
+            <a class="contact__media" href="#"><i class="fa-brands fa-instagram fa-4x"></i></a>
+        </div>
+    </section>
+</body>
+</html>

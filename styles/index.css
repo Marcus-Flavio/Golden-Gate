@@ -1,16 +1,46 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+* {
+	padding: 0;
+	margin: 0;
 
-    color: rgb(165, 165, 165);
+	color: rgb(165, 165, 165);
+}
+body {
+	background-color: rgb(87, 87, 87);
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: overline;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
 }
-body{
-    background-color: rgb(87, 87, 87);
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
 }
-.menu{
-  	background-color: rgba(0, 0, 0, 0.5);
+
+.menu {
+	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -22,17 +52,26 @@ body{
 	font-variant: small-caps;
 	justify-content: space-between;
 }
-.menu__list{
+.menu__list {
 	height: fit-content;
 }
-.menu__item{
-    display: inline;
-    text-decoration: none;
+.menu__item {
+	display: inline;
+	text-decoration: none;
 
-    margin-right: 70px;
-    padding: 5px;
+	margin-right: 70px;
+	padding: 5px;
 
 	font-size: 18px;
+}
+.home__content {
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+.home__title {
+}
 
-
+.home__slides {
+	display: none;
 }

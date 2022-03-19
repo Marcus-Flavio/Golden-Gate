@@ -3,24 +3,8 @@
 	padding: 0;
 	margin: 0;
 
-	color: rgb(165, 165, 165);
+	color: rgb(194, 194, 194);
 }
-body {
-	background-color: rgb(87, 87, 87);
-}
-a {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: overline;
-}
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
 @-webkit-keyframes fade {
 	from {
 		opacity: 0.4;
@@ -29,7 +13,6 @@ a:hover {
 		opacity: 1;
 	}
 }
-
 @keyframes fade {
 	from {
 		opacity: 0.4;
@@ -39,10 +22,28 @@ a:hover {
 	}
 }
 
+body {
+	background-color: rgb(87, 87, 87);
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: overline;
+}
+h1 {
+	color: white;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
 .menu {
 	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -70,6 +71,14 @@ a:hover {
 	margin: auto;
 }
 .home__title {
+	font-variant-caps: all-small-caps;
+	font-size: 60px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
 }
 
 .home__slides {

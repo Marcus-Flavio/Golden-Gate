@@ -3,7 +3,6 @@
 	padding: 0;
 	margin: 0;
 
-	z-index: 0;
 	color: rgb(194, 194, 194);
 }
 @-webkit-keyframes fade {
@@ -22,8 +21,14 @@
 		opacity: 1;
 	}
 }
+:host {
+	overflow: auto;
+  }
 body {
 	background-color: rgb(87, 87, 87);
+	max-width: 100%;
+	margin: 0;
+
 }
 a {
 	text-decoration: none;
@@ -61,7 +66,7 @@ section {
 	animation-duration: 1.5s;
 }
 .menu, .menu-responsive{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -162,22 +167,26 @@ section {
 	align-items: center;
 	margin-top: 100px;
 	width: 100%;
+
 }
 .projects__item {
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 60px;
+	
+
 }
 .projects__item > a:hover {
 	text-decoration: none;
 }
 .projects__item-img{
-	width: 300px;
+	width: 320px;
+	height: 250px;
 }
 .overlay{
 	position: absolute;
-	width: 300px;
-	height: 200px;
+	width: 320px;
+	height: 250px;
 
 	font-size: xx-large;
 	color: transparent;
@@ -190,11 +199,26 @@ section {
                      rgba(20,20,20, .3));
 }
 .contact{
-	margin: 0;
-	height: 900px;
+	display: grid;
+	text-align: center;
+	align-content: center;
 }
 .input-sm{
 	height: 20px;
+}
+.contact__form{
+	width: 50%;
+	height: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	box-shadow: 8px 8px 60px black;
+	border-radius: 10px;
+	padding: 40px;
+	margin-top: 30px;
+	align-content: center;
+	align-self: center;
+	background-color: #3302b900;
 }
 .contact__form-input{
 	width: 40%;
@@ -216,8 +240,9 @@ section {
 }
 @media (max-width: 1070px){
 	.menu-responsive,
-	.menu {
+	.menu {	
 		text-align: start;
+		margin: 0;
 	}
 	.menu-responsive {
 		height: fit-content;
@@ -255,5 +280,33 @@ section {
 	}
 	.menu__item--hidden {
 		display: inline;
+	}
+	.contact__form {
+		width: 70%;
+	}
+	.contact__form-input {
+		width: 70%;
+	}
+}
+@media (max-width: 570px){
+	.headerSection {
+		font-size: 20vw;
+		width: 100%;
+	}
+	.paragraphSection {
+		font-size: 4.5vw;
+		left: 0;
+		width: 100%;
+	}
+	.imgSection {
+		position: relative;
+		bottom: 10vh;
+		width: 100vw;
+	}
+	.contact__form {
+		width: 80%;
+	}
+	.contact__form-input {
+		width: 90%;
 	}
 }

@@ -267,10 +267,6 @@ section {
 		padding-bottom: 5px;
 		font-size: medium;
 	}
-	.menu-responsive .menu__item:not(:first-child, .menu__logo):hover {
-		background-color: rgba(0, 0, 0, 0.1);
-		border-radius: 10px;
-	}
 	.menu__logo {
 		display: inline;
 		position: absolute;
